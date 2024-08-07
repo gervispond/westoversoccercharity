@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple One-Page Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .title {
+            flex: 1;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .email {
+            color: #fff;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .about {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about h1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .about img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="wsa.png" alt="WSA Logo">
+        </div>
+        <div class="title">WESTOVER SOCCER CHARITY</div>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/westover_soccer_charity/" target="_blank">Instagram</a></li>
+            </ul>
+            <div class="email">email: wsc@sosnitsky.us</div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About This Website</h1>
+            <p>This is a simple one-page website with a link to an Instagram page and a section about the website. It's designed to be minimal and clean.</p>
+            <img src="example.jpg" alt="Example Image">
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+

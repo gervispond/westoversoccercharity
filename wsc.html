@@ -13,11 +13,13 @@
             box-sizing: border-box;
         }
 
+       
+
         body {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.8;
-            background-color: #f9f9f9;
-            color: #000;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #000000; /* Black text */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -31,16 +33,20 @@
             align-items: center;
             width: 100%;
             margin-bottom: 1.5rem;
+            background-color: #ffffffb3; /* Light background with slight transparency */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .logo img {
-            max-width: 220px;
+            max-width: 240px;
             height: auto;
         }
 
         .title {
             font-size: 4rem;
-            color: #000;
+            color: #000000; /* Black text */
             text-align: center;
             flex-grow: 1;
         }
@@ -62,13 +68,13 @@
         }
 
         nav ul li a {
-            color: #000;
+            color: #000000; /* Black text for links */
             text-decoration: none;
             font-size: 1.5rem;
         }
 
         .email {
-            color: #000;
+            color: #000000; /* Black text for email */
             font-size: 1.5rem;
         }
 
@@ -76,6 +82,7 @@
             padding: 2rem;
             text-align: center;
             width: 100%;
+            flex-grow: 1; /* Allow main content to fill available space */
         }
 
         .about {
@@ -87,20 +94,24 @@
             font-size: 1.6rem;
             line-height: 1.5;
             margin-bottom: 1.5rem;
+            color: #000000; /* Black text */
         }
 
         .description {
             font-size: 1.4rem;
-            color: #000;
+            color: #000000; /* Black text */
             margin-top: 2rem;
             text-align: center;
             padding: 0 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .slideshow-container {
-            bottom: 1rem;
-            left: 1rem;
-            max-width: 250px;
+            margin-top: 2rem;
+            max-width: 400px; /* Set slideshow size */
+            width: 100%;
         }
 
         .slideshow-container img {
@@ -120,13 +131,14 @@
         }
 
         .collaborated-with, .provided-supplies {
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
             width: 350px;
             margin-bottom: 1.5rem;
+            color: #000000; /* Black text */
         }
 
         .tabs-container {
@@ -136,31 +148,39 @@
             align-items: flex-start;
             width: 100%;
             margin-top: 2rem;
-            padding-right: 20px; /* Move the tab further to the left */
+            padding-right: 20px;
         }
 
         .collaborated-with {
-            margin-right: 20px; /* Move the "Collaborated with:" tab a bit more to the left */
+            margin-right: 20px;
         }
 
         .collaborated-with h3, .provided-supplies h3 {
             font-size: 1.6rem;
             margin-bottom: 0.75rem;
+            color: #000000; /* Black text */
         }
 
         .collaborated-with ul, .provided-supplies ul {
             list-style-type: square;
             padding-left: 25px;
             font-size: 1.3rem;
-            color: #333;
+            color: #000000; /* Black text */
         }
 
         .decorative-line {
             width: 50%;
             height: 4px;
-            background-color: #000;
+            background-color: #000000; /* Black decorative line */
             margin: 20px auto;
             border-radius: 2px;
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 1rem;
         }
     </style>
 </head>
@@ -185,16 +205,6 @@
         <div class="decorative-line"></div>
     </main>
 
-    <div class="slideshow-container">
-      <img class="mySlides fade" src="08831ec6-e75c-4d3a-8c92-7696f9f18714.jpeg" alt="Image uno">
-      <img class="mySlides fade" src="3365b451-5a27-406a-9327-fd5912890b8e.jpeg" alt="Image 2" style="display:none">
-      <img class="mySlides fade" src="43b5357c-68c9-4b98-b459-8cc2b71f4893.jpeg" alt="Image 3" style="display:none">
-      <img class="mySlides fade" src="66c1e6b0-708e-4449-ac46-683dbba8b77c.jpeg" alt="Image 4" style="display:none">
-      <img class="mySlides fade" src="IMG_1194.jpeg" alt="Image 5" style="display:none">
-      <img class="mySlides fade" src="IMG_1201.jpeg" alt="Image 6" style="display:none">
-      <img class="mySlides fade" src="IMG_1210.jpeg" alt="Image 7" style="display:none">
-  </div>
-
     <div class="tabs-container">
         <div class="collaborated-with">
             <h3>Collaborated with:</h3>
@@ -208,7 +218,7 @@
         </div>
 
         <div class="provided-supplies">
-            <h3>Provided supplies to:</h3>
+            <h3>Provided supplies to:</h>
             <ul>
                 <li>Atcha Academy</li>
                 <li>Nguerigne Académie Foot</li>
@@ -216,6 +226,21 @@
             </ul>
         </div>
     </div>
+
+    <footer>
+        <div class="slideshow-container">
+            <img class="mySlides fade" src="image1.png" alt="Image 1">
+            <img class="mySlides fade" src="image2.png" alt="Image 2" style="display:none">
+            <img class="mySlides fade" src="image3.png" alt="Image 3" style="display:none">
+            <img class="mySlides fade" src="image4.png" alt="Image 4" style="display:none">
+            <img class="mySlides fade" src="image5.png" alt="Image 5" style="display:none">
+            <img class="mySlides fade" src="image6.png" alt="Image 6" style="display:none">
+            <img class="mySlides fade" src="image7.png" alt="Image 7" style="display:none">
+            <img class="mySlides fade" src="image8.png" alt="Image 8" style="display:none">
+            <img class="mySlides fade" src="image9.png" alt="Image 9" style="display:none">
+            <img class="mySlides fade" src="image10.png" alt="Image 10" style="display:none">
+        </div>
+    </footer>
 
     <script>
         let slideIndex = 0;
@@ -234,6 +259,7 @@
     </script>
 </body>
 </html>
+
 
 
 
